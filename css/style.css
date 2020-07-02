@@ -32,10 +32,10 @@ body .clock {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: white;
+  background-color: aliceblue;
   background-image: url(https://i.postimg.cc/CLZY3HwT/clock.png);
   background-size: cover;
-  border: 4px solid white;
+  border: 4px solid aliceblue;
   border-radius: 50%;
   -webkit-box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05), inset 0 -15px 15px rgba(255, 255, 255, 0.05), 0 15px 15px rgba(0, 0, 0, 0.05), inset 0 15px 15px rgba(0, 0, 0, 0.05);
           box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05), inset 0 -15px 15px rgba(255, 255, 255, 0.05), 0 15px 15px rgba(0, 0, 0, 0.05), inset 0 15px 15px rgba(0, 0, 0, 0.05);
@@ -128,8 +128,7 @@ body .toggle .checkbox:checked + .label .toggler {
 }
 
 body .toggle .label {
-  background: -webkit-gradient(linear, left top, right top, from(skyblue), to(navy));
-  background: linear-gradient(to right, skyblue, navy);
+  background: aliceblue;
   width: 48px;
   height: 26px;
   display: -webkit-box;
@@ -142,12 +141,15 @@ body .toggle .label {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05), inset 0 -15px 15px rgba(255, 255, 255, 0.05), 0 15px 15px rgba(0, 0, 0, 0.05), inset 0 15px 15px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05), inset 0 -15px 15px rgba(255, 255, 255, 0.05), 0 15px 15px rgba(0, 0, 0, 0.05), inset 0 15px 15px rgba(0, 0, 0, 0.05);
+  border: 2px solid aliceblue;
 }
 
 body .toggle .label .toggler {
   width: 22px;
   height: 22px;
-  background: white;
+  background: #001534;
   position: relative;
   border-radius: 50%;
   margin: 1px;
@@ -156,6 +158,7 @@ body .toggle .label .toggler {
 body .toggle p {
   margin-left: 15px;
   font-size: 20px;
+  color: #001534;
 }
 
 body.dark {
@@ -185,5 +188,16 @@ body.dark .clock .sec::before {
 
 body.dark .clock::before {
   background: white;
+}
+
+body.dark .toggle .label {
+  background: #001534;
+  border: 2px solid #001534;
+  -webkit-box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05), inset 0 -15px 15px rgba(255, 255, 255, 0.05), 0 15px 15px rgba(0, 0, 0, 0.05), inset 0 15px 15px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05), inset 0 -15px 15px rgba(255, 255, 255, 0.05), 0 15px 15px rgba(0, 0, 0, 0.05), inset 0 15px 15px rgba(0, 0, 0, 0.05);
+}
+
+body.dark .toggle .label .toggler {
+  background: aliceblue;
 }
 /*# sourceMappingURL=style.css.map */
