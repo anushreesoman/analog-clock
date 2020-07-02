@@ -1,3 +1,11 @@
+//Toggler function
+const checkbox = document.getElementById('checkbox');
+
+checkbox.addEventListener('change', () => {
+  document.body.classList.toggle('dark');
+})
+
+//Clock functions
 const deg = 6;
 
 const hr = document.querySelector('#hr');
